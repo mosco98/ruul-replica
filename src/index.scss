@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// @import url("https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap");
+
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap");
+
+html {
+  @apply text-primary;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 88px;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 67.2px;
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+h4 {
+  font-size: 22px;
+  line-height: 36px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.container {
+  @apply mx-auto px-[5%];
+}
+
+.protocol-icons {
+  @apply w-12 h-12 rounded-full flex items-center justify-center border border-primary flex-none mt-1;
+  box-shadow: 3px 3px #013e39;
+
+  img {
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+
+.shadow-4px {
+  box-shadow: 4px 4px #013e39;
+}
+
+.slick-arrow {
+  top: -115px !important;
+
+  &.slick-prev {
+    right: 80px !important;
+    left: unset !important;
+  }
+
+  &.slick-next {
+    right: 20px !important;
+  }
+
+  &.slick-prev,
+  &.slick-next {
+    &::before {
+      content: "" !important;
+    }
+  }
+}
+
+.user-stories-card {
+  @apply p-10 rounded-lg bg-white flex flex-col justify-between gap-8;
+}
+
+.socials {
+  @apply w-12 h-12 bg-secondary rounded-full flex items-center justify-center p-4;
+}

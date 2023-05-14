@@ -1,0 +1,9 @@
+.Megamenu {
+  @apply hidden md:block;
+
+  .dropdown {
+    @apply absolute top-full left-52 mt-2 border border-primary rounded-lg w-[70%] max-w-[840px] overflow-hidden;
+
+    z-index: 100000;
+  }
+}

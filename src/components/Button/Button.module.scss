@@ -1,0 +1,15 @@
+.Button {
+  @apply flex items-center justify-center flex-shrink-0 px-8 py-3 rounded-lg;
+
+  &.fill {
+    @apply bg-primary text-[#cafdc6] hover:bg-[#00554e] transition-all duration-300 ease-in-out;
+  }
+
+  &.outline {
+    @apply border border-primary bg-white text-primary hover:text-secondary hover:bg-primary transition-all duration-300 ease-in-out;
+  }
+
+  &.has_icon {
+    @apply gap-x-4;
+  }
+}

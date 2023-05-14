@@ -1,0 +1,12 @@
+.Hero {
+  @apply bg-secondary pt-24 pb-16 md:pb-0 border-b border-primary;
+
+  .heroImg {
+    width: auto;
+    height: auto;
+    outline-offset: 0px;
+    object-fit: cover;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+}

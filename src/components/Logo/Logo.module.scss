@@ -1,0 +1,15 @@
+.Logo {
+  @apply flex-shrink-0;
+
+  &.primary {
+    path {
+      @apply fill-primary;
+    }
+  }
+
+  &.secondary {
+    path {
+      @apply fill-secondary;
+    }
+  }
+}

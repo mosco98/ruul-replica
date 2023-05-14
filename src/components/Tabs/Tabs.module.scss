@@ -1,0 +1,19 @@
+.Tabs {
+}
+
+.Tab {
+  @apply px-8 py-2 rounded-[48px] text-[20px] font-medium cursor-pointer bg-white;
+
+  &.active {
+    @apply bg-primary text-secondary;
+    box-shadow: 1px 8px 20px rgba(141, 155, 190, 0.16);
+  }
+}
+
+.TabPanel {
+  @apply relative;
+
+  // & > div {
+  //   @apply absolute top-0 left-0 w-full;
+  // }
+}

@@ -1,0 +1,22 @@
+.Slider {
+  // @apply overflow-hidden;
+
+  .Prev,
+  .Next {
+    @apply w-10 h-10 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 ease-in-out;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .Prev {
+    @apply border border-secondary text-secondary hover:border-white hover:bg-white hover:text-primary;
+
+    border: 1px solid #c9fec6 !important;
+  }
+
+  .Next {
+    @apply bg-secondary text-primary hover:bg-white;
+  }
+}

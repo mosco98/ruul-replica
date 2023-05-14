@@ -1,0 +1,7 @@
+.Navbar {
+  @apply bg-secondary text-primary border-b border-primary;
+
+  & > div {
+    @apply flex items-center justify-between relative py-6;
+  }
+}
