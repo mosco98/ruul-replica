@@ -1,7 +1,20 @@
 .Navbar {
-  @apply border-b border-primary bg-secondary text-primary;
+  @apply border-b border-primary bg-secondary text-primary relative;
+  z-index: 10000;
 
-  & > div {
-    @apply relative flex items-center justify-between py-6;
+  .Navbar__inner {
+    @apply relative flex items-center bg-secondary justify-between py-6;
+    z-index: 10000;
+  }
+
+  .MobileMenu {
+    @apply absolute top-full left-0 w-full bg-white border-y border-primary;
+
+    ul {
+      padding: 10px;
+      li {
+        @apply py-3 px-6;
+      }
+    }
   }
 }

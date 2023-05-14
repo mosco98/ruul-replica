@@ -13,16 +13,31 @@ html {
 h1 {
   font-size: 80px;
   line-height: 88px;
+
+  @media screen and (max-width: "768px") {
+    font-size: 48px;
+    line-height: 1.1;
+  }
 }
 
 h2 {
   font-size: 48px;
   line-height: 67.2px;
+
+  @media screen and (max-width: "768px") {
+    font-size: 32px;
+    line-height: 1.4;
+  }
 }
 
 h3 {
   font-size: 36px;
   line-height: 36px;
+
+  @media screen and (max-width: "768px") {
+    font-size: 24px;
+    line-height: 1.4;
+  }
 }
 
 h4 {
@@ -67,7 +82,11 @@ p {
 }
 
 .slick-arrow {
-  top: -115px !important;
+  top: -96px !important;
+
+  @media screen and (max-width: "768px") {
+    top: -40px !important;
+  }
 
   &.slick-prev {
     right: 80px !important;

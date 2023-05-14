@@ -1,12 +1,16 @@
-import { Button } from "../Button";
-import { Logo } from "../Logo";
-import { Megamenu } from "../Megamenu";
-import styles from "./Navbar.module.scss";
+import classNames from "classnames"
+import { motion } from "framer-motion"
+import { useState } from "react"
+import { Button } from "../Button"
+import { Logo } from "../Logo"
+import { Megamenu } from "../Megamenu"
+import styles from "./Navbar.module.scss"
 
 export default function Navbar() {
+  const [showMobileMenu, setShowMobileMenu] = useState(false)
   return (
     <nav className={styles.Navbar}>
-      <div className="container">
+      <div className={classNames(styles.Navbar__inner, "container")}>
         <div className="flex flex-1 items-center space-x-11">
           <Logo variant={"primary"} />
 
@@ -2375,7 +2379,49 @@ export default function Navbar() {
           <Button variant={"outline"} text="Login" />
           <Button variant={"fill"} text="Sign up" />
         </div>
+
+        <span
+          className="md:hidden w-12 h-12 bg-white border border-primary rounded-lg shadow-4px flex items-center justify-center text-primary"
+          onClick={() => setShowMobileMenu(!showMobileMenu)}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
       </div>
+
+      <motion.div
+        initial={{ y: -700, zIndex: -1000 }}
+        animate={{
+          y: showMobileMenu ? 0 : -700
+        }}
+        className={styles.MobileMenu}
+        transition={{ ease: "easeInOut", duration: 0.5 }}
+      >
+        <ul>
+          <li>For Talents</li>
+          <li>For Businesses</li>
+          <li>Pricing</li>
+          <li>Collaborate</li>
+          <li>Resources</li>
+        </ul>
+
+        <div className="flex flex-col py-[30px] px-6 border-t border-primary bg-[#feeeca] gap-4">
+          <Button text={"Login"} variant={"outline"} />
+          <Button text={"Sign up"} variant={"fill"} />
+        </div>
+      </motion.div>
     </nav>
-  );
+  )
 }

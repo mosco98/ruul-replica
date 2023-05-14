@@ -1,22 +1,22 @@
-import attachmentDetachmentSvg from "./assets/images/attachment-detachment.svg";
-import complianceSvg from "./assets/images/compliance.svg";
-import growAndThriveSectionSvg from "./assets/images/grow-and-thrive-section.svg";
-import invoicingSvg from "./assets/images/invoicing.svg";
-import ruulLong from "./assets/images/ruul-long.svg";
-import standardizationSvg from "./assets/images/standardization.svg";
-import { Accordion, AccordionItem } from "./components/Accordion";
-import { Button } from "./components/Button";
-import { CustomSlider } from "./components/CustomSlider";
-import { Hero } from "./components/Hero";
-import Layout from "./components/Layout";
-import { Tab, TabPanel, Tabs } from "./components/Tabs";
+import attachmentDetachmentSvg from "./assets/images/attachment-detachment.svg"
+import complianceSvg from "./assets/images/compliance.svg"
+import growAndThriveSectionSvg from "./assets/images/grow-and-thrive-section.svg"
+import invoicingSvg from "./assets/images/invoicing.svg"
+import ruulLong from "./assets/images/ruul-long.svg"
+import standardizationSvg from "./assets/images/standardization.svg"
+import { Accordion, AccordionItem } from "./components/Accordion"
+import { Button } from "./components/Button"
+import { CustomSlider } from "./components/CustomSlider"
+import { Hero } from "./components/Hero"
+import Layout from "./components/Layout"
+import { Tab, TabPanel, Tabs } from "./components/Tabs"
 
 export default function App() {
   return (
     <Layout>
       <Hero />
 
-      <section className="bg-white pb-32 pt-64">
+      <section className="bg-white py-[72px] md:pb-32 md:pt-64">
         <div className="container grid grid-cols-1 gap-0 md:grid-cols-11 md:gap-16">
           <div className="col-span-5 hidden md:block">
             <img src={ruulLong} alt="ruul-long" />
@@ -25,7 +25,7 @@ export default function App() {
             <h6 className="font-medium uppercase tracking-[1.12px]">
               AGENCY OF RECORD
             </h6>
-            <h1 className="mt-3 font-medium tracking-[-0.04em]">
+            <h1 className="mt-1 md:mt-3 font-medium tracking-[-0.04em]">
               A new connection protocol for work
             </h1>
 
@@ -132,12 +132,12 @@ export default function App() {
         </div>
       </section>
 
-      <section className="bg-primary py-32">
+      <section className="bg-primary py-[72px] md:py-32">
         <div className="container">
           <h6 className="font-medium uppercase tracking-[1.12px] text-secondary">
             THE NEW WAY OF WORK
           </h6>
-          <div className="mt-3 grid grid-cols-1 gap-16 text-secondary md:grid-cols-11">
+          <div className="mt-1 md:mt-3 grid grid-cols-1 gap-[30px] md:gap-16 text-secondary md:grid-cols-11">
             <div className="col-span-1 md:col-span-6">
               <h1 className="mt-3 font-medium tracking-[-0.04em]">
                 Tailored for the new economy
@@ -153,9 +153,9 @@ export default function App() {
             </div>
           </div>
 
-          <div className="mt-24 grid grid-cols-1 gap-12 md:grid-cols-2">
-            <div className="rounded-lg bg-white px-10 pb-10 pt-[60px]">
-              <span className="shadow-4px mx-auto flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-white p-4">
+          <div className="mt-10 md:mt-24 grid grid-cols-1 gap-12 md:grid-cols-2">
+            <div className="rounded-lg bg-white p-8 md:px-10 md:pb-10 md:pt-[60px]">
+              <span className="shadow-4px mr-auto md:mx-auto flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-white p-4">
                 <svg
                   width={62}
                   height={62}
@@ -181,22 +181,22 @@ export default function App() {
                 </svg>
               </span>
 
-              <h2 className="mt-10 text-center font-medium tracking-[-0.04em]">
+              <h2 className="mt-10 text-left md:text-center font-medium tracking-[-0.04em]">
                 For Talents
               </h2>
 
-              <h6 className="mt-1 text-center font-medium uppercase tracking-[-0.08em]">
+              <h6 className="mt-1 text-left md:text-center font-medium uppercase tracking-[-0.08em]">
                 in 120 countries
               </h6>
 
-              <div className="mt-[42px] rounded-lg border border-primary p-5 text-center">
+              <div className="mt-[42px] rounded-lg md:border md:border-primary p-0 md:p-5 text-left md:text-center">
                 <h5 className="tracking-[-0.04em]">
                   Empower your independent career with financial autonomy. Work
                   with any business worldwide, effortlessly and compliantly.
                 </h5>
               </div>
 
-              <div className="mx-auto mt-10 grid max-w-fit grid-cols-2 justify-items-start gap-x-8 gap-y-5">
+              <div className="mx-auto mt-10 grid max-w-full md:max-w-fit grid-cols-1 md:grid-cols-2 justify-items-start gap-x-0 md:gap-x-8 gap-y-5">
                 <span className="flex items-center justify-center gap-x-2">
                   <svg
                     width={24}
@@ -326,13 +326,13 @@ export default function App() {
                 }
               />
 
-              <p className="mt-5 text-center">
+              <p className="mt-5 text-center hidden md:block">
                 <span className="font-medium">50k+</span> talents use Ruul
               </p>
             </div>
 
-            <div className="rounded-lg bg-[#fec1ae] px-10 pb-10 pt-[60px]">
-              <span className="shadow-4px mx-auto flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-white p-4">
+            <div className="rounded-lg bg-[#fec1ae] p-8 md:px-10 md:pb-10 md:pt-[60px]">
+              <span className="shadow-4px mr-auto md:mx-auto flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-white p-4">
                 <svg
                   width={55}
                   height={55}
@@ -366,15 +366,15 @@ export default function App() {
                 </svg>
               </span>
 
-              <h2 className="mt-10 text-center font-medium tracking-[-0.04em]">
+              <h2 className="mt-10 text-left md:text-center font-medium tracking-[-0.04em]">
                 For Businesses
               </h2>
 
-              <h6 className="mt-1 text-center font-medium uppercase tracking-[-0.08em]">
+              <h6 className="mt-1 text-left md:text-center font-medium uppercase tracking-[-0.08em]">
                 in 120 countries
               </h6>
 
-              <div className="mt-[42px] rounded-lg border border-primary p-5 text-center">
+              <div className="mt-[42px] rounded-lg md:border md:border-primary p-0 md:p-5 text-left md:text-center">
                 <h5 className="tracking-[-0.04em]">
                   Stay agile by working with talents all around the world.
                   Streamline your talent operations with an easy attachment and
@@ -382,7 +382,7 @@ export default function App() {
                 </h5>
               </div>
 
-              <div className="mx-auto mt-10 grid max-w-fit grid-cols-2 justify-items-start gap-y-5">
+              <div className="mx-auto mt-10 grid max-w-full md:max-w-fit grid-cols-1 md:grid-cols-2 justify-items-start gap-y-5">
                 <span className="flex items-center justify-center gap-x-2">
                   <svg
                     width={24}
@@ -512,7 +512,7 @@ export default function App() {
                 }
               />
 
-              <p className="mt-5 text-center">
+              <p className="mt-5 text-center hidden md:block">
                 <span className="font-medium">10k+</span> businesses use Ruul
               </p>
             </div>
@@ -520,12 +520,12 @@ export default function App() {
         </div>
       </section>
 
-      <section className="bg-[#feeeca] py-32">
+      <section className="bg-[#feeeca] py-[72px] md:py-32">
         <div className="container">
           <h6 className="font-medium uppercase tracking-[1.12px]">
             WORK SOLUTIONS FOR TODAY
           </h6>
-          <div className="mt-3 grid grid-cols-1 gap-16 md:grid-cols-11">
+          <div className="mt-1 md:mt-3 grid grid-cols-1 gap-[30px] md:gap-16 md:grid-cols-11">
             <div className="col-span-1 md:col-span-6">
               <h1 className="mt-3 font-medium tracking-[-0.04em]">
                 Remedies for the new work landscape
@@ -540,14 +540,14 @@ export default function App() {
             </div>
           </div>
 
-          <div className="mt-24">
+          <div className=" mt-[60px] md:mt-24">
             <Tabs defaultIndex={1}>
-              <div className="relative mx-auto flex w-full items-center rounded-[44px] border border-primary bg-white p-1 md:w-fit">
+              <div className="relative mr-auto md:mx-auto inline-flex md:flex items-center rounded-[10px] md:rounded-[44px] border border-primary bg-white p-1 md:w-fit">
                 <Tab title={"For Talents"} index={1} />
                 <Tab title={"For Businesses"} index={2} />
 
                 <svg
-                  className="absolute left-full top-1 ml-2"
+                  className="absolute left-full top-1 ml-2 hidden md:block"
                   width={64}
                   height={64}
                   viewBox="0 0 64 64"
@@ -561,10 +561,10 @@ export default function App() {
                 </svg>
               </div>
 
-              <div className="mt-[72px]">
+              <div className="mt-7 md:mt-[72px]">
                 <TabPanel index={1}>
                   <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-                    <div className="rounded-lg border border-primary bg-white p-10">
+                    <div className="rounded-lg border border-primary bg-white p-8 md:p-10">
                       <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={59}
@@ -673,7 +673,7 @@ export default function App() {
                         and get paid without having to set up a legal entity.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
+                      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -805,7 +805,7 @@ export default function App() {
                     </div>
                     <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab1grid2.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
                     <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab1grid3.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
-                    <div className="rounded-lg border border-primary bg-white p-10">
+                    <div className="rounded-lg border border-primary bg-white p-8 md:p-10">
                       <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={49}
@@ -878,7 +878,7 @@ export default function App() {
                         clients and accelerate your payment process.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
+                      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -1008,7 +1008,7 @@ export default function App() {
                         }
                       />
                     </div>
-                    <div className="rounded-lg border border-primary bg-white p-10">
+                    <div className="rounded-lg border border-primary bg-white p-8 md:p-10">
                       <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={43}
@@ -1058,7 +1058,7 @@ export default function App() {
                         one place.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
+                      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -1190,7 +1190,7 @@ export default function App() {
                     </div>
                     <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab1grid6.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
                     <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab1grid7.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
-                    <div className="rounded-lg border border-primary bg-white p-10">
+                    <div className="rounded-lg border border-primary bg-white p-8 md:p-10">
                       <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={49}
@@ -1264,7 +1264,7 @@ export default function App() {
                         earnings.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
+                      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -1398,7 +1398,7 @@ export default function App() {
                 </TabPanel>
                 <TabPanel index={2}>
                   <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-                    <div className="rounded-lg border border-primary bg-white p-10">
+                    <div className="rounded-lg border border-primary bg-white p-8 md:p-10">
                       <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={59}
@@ -1508,7 +1508,7 @@ export default function App() {
                         arrangement.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
+                      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -1640,7 +1640,7 @@ export default function App() {
                     </div>
                     <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab2grid2.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
                     <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab2grid3.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
-                    <div className="rounded-lg border border-primary bg-white p-10">
+                    <div className="rounded-lg border border-primary bg-white p-8 md:p-10">
                       <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={43}
@@ -1688,7 +1688,7 @@ export default function App() {
                         Manage payments to your talents on a single platform.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
+                      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -1818,7 +1818,7 @@ export default function App() {
                         }
                       />
                     </div>
-                    <div className="rounded-lg border border-primary bg-white p-10">
+                    <div className="rounded-lg border border-primary bg-white p-8 md:p-10">
                       <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={49}
@@ -1892,7 +1892,7 @@ export default function App() {
                         single platform.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
+                      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -2024,7 +2024,7 @@ export default function App() {
                     </div>
                     <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab2grid6.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
                     <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab2grid7.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
-                    <div className="rounded-lg border border-primary bg-white p-10">
+                    <div className="rounded-lg border border-primary bg-white p-8 md:p-10">
                       <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={49}
@@ -2097,7 +2097,7 @@ export default function App() {
                         and manage your workforce from a centralized platform.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
+                      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -2235,7 +2235,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="border-t border-primary bg-white py-32">
+      <section className="border-t border-primary bg-white py-[72px] md:py-32">
         <div className="container grid grid-cols-1 md:grid-cols-5">
           <div className="col-span-1 md:col-span-2">
             <div className="max-w-full md:max-w-[85%]">
@@ -2247,11 +2247,11 @@ export default function App() {
                 Common questions
               </h1>
 
-              <h4 className="mt-6 max-w-full md:max-w-[90%]">
+              <h4 className=" mt-5 md:mt-6 max-w-full md:max-w-[90%]">
                 Find the answers to frequently asked questions here.
               </h4>
 
-              <div className="mt-12">
+              <div className="mt-6 md:mt-12">
                 <div className="flex flex-col items-start justify-between md:flex-row md:items-center">
                   <div className="flex items-center gap-x-2">
                     <span className="flex h-4 w-4 items-center justify-center rounded-full bg-primary text-secondary">
@@ -2323,7 +2323,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="bg-primary py-32">
+      <section className="bg-primary py-[72px] md:py-32">
         <div className="container">
           <CustomSlider subTitle={"USER STORIES"} title={"Why they love Ruul"}>
             <div className="grid grid-cols-1 content-stretch gap-[48px] md:grid-cols-2">
@@ -2393,9 +2393,9 @@ export default function App() {
         </div>
       </section>
 
-      <section className="bg-secondary py-32">
+      <section className="bg-secondary py-[72px] md:py-32">
         <div className="container">
-          <div className="mx-auto w-full max-w-[650px] text-center">
+          <div className="mx-auto w-full max-w-full md:max-w-[650px] text-left md:text-center">
             <h6 className="font-medium uppercase tracking-[1.12px]">
               GET STARTED NOW
             </h6>
@@ -2410,20 +2410,20 @@ export default function App() {
               worktech solutions.
             </h4>
 
-            <div className="mt-10 flex items-center justify-center space-x-6">
+            <div className="mt-10 flex flex-col md:flex-row items-center justify-start md:justify-center gap-6">
               <Button
-                className={"py-4"}
+                className={"py-4 w-full md:w-auto"}
                 text={`I'm a Talent`}
                 variant={"fill"}
               />
               <Button
-                className={"py-4"}
+                className={"py-4 w-full md:w-auto"}
                 text={`I'm a Business`}
                 variant={"outline"}
               />
             </div>
 
-            <div className="mt-[72px] flex items-center justify-center space-x-2">
+            <div className="mt-7 md:mt-[72px] flex items-center justify-start md:justify-center space-x-2">
               <span>Excellent 4.7 out of 5</span>
               <svg
                 role="img"
@@ -2452,7 +2452,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="mt-[65px] overflow-hidden rounded-lg border border-primary">
+          <div className="mt-7 md:mt-[65px] overflow-hidden rounded-lg border border-primary h-[400px] md:h-auto">
             <img
               className="h-full w-full object-cover"
               src={growAndThriveSectionSvg}
@@ -2462,9 +2462,9 @@ export default function App() {
         </div>
       </section>
 
-      <section className="border-t border-primary bg-white py-24">
+      <section className="border-t border-primary bg-white py-[72px] md:py-24">
         <div className="container">
-          <div className="grid grid-cols-2 items-center justify-items-stretch gap-[64px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-items-stretch gap-[30px] md:gap-[64px]">
             <div>
               <h1 className="font-medium tracking-[-0.04em]">
                 Explore and spread: Ruul Blog
@@ -2478,12 +2478,12 @@ export default function App() {
             </div>
             <div>
               <div className="ml-auto w-full max-w-[420px]">
-                <form className="flex items-center gap-x-3 rounded-lg border border-primary p-1">
+                <form className="flex items-center gap-x-1 md:gap-x-3 rounded-lg border border-primary p-1">
                   <input
                     type="email"
                     required={true}
                     placeholder="Enter your email"
-                    className="min-h-[48px] flex-1 bg-transparent px-4 py-3 outline-none placeholder:text-primary"
+                    className="min-h-[48px] flex-1 bg-transparent px-2 md:px-4 py-3 outline-none placeholder:text-primary"
                   />
                   <Button text={"Subscribe"} variant="fill" />
                 </form>
@@ -2496,14 +2496,14 @@ export default function App() {
             </div>
           </div>
 
-          <div className="mt-[60px] flex items-end justify-between rounded-lg border border-primary bg-[url('./assets/images/blog-section-bg.jpg')] bg-cover bg-center p-8">
-            <div className="max-w-[420px] rounded-lg border border-primary bg-white p-8">
+          <div className="mt-[60px] flex flex-col md:flex-row items-center md:items-end justify-center md:justify-between gap-8 md:gap-0 rounded-lg border border-primary bg-[url('./assets/images/blog-section-bg.jpg')] bg-cover bg-center px-[5%] py-8 md:p-8">
+            <div className="max-w-full md:max-w-[420px] rounded-lg border border-primary bg-white p-8">
               <h3 className="font-medium leading-[1.4] tracking-[-0.03em]">
                 Talent Talks #4: Meet photographer & cinematographer Vasilis
                 Barahanos
               </h3>
 
-              <div className="mt-16 flex items-center gap-x-2">
+              <div className="mt-7 md:mt-16 flex items-center gap-x-2">
                 <span className="block h-12 w-12 overflow-hidden rounded-full border border-primary bg-secondary">
                   <img
                     className="h-full w-full object-cover"
@@ -2518,13 +2518,21 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <div className="flex items-center gap-x-3 pb-8">
-              <Button text={"Read More"} variant={"fill"} />
-              <Button text={"Discover blog"} variant={"outline"} />
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-3 pb-0 md:pb-8 w-full md:w-auto">
+              <Button
+                className={"w-full md:w-auto flex-shrink-0"}
+                text={"Read More"}
+                variant={"fill"}
+              />
+              <Button
+                className={"w-full md:w-auto flex-shrink-0"}
+                text={"Discover blog"}
+                variant={"outline"}
+              />
             </div>
           </div>
         </div>
       </section>
     </Layout>
-  );
+  )
 }

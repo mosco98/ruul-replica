@@ -1,14 +1,15 @@
-import { Logo } from "../Logo";
-import styles from "./Footer.module.scss";
+import { Logo } from "../Logo"
+import styles from "./Footer.module.scss"
 
 export default function Footer() {
+  // flex flex-wrap md:flex-nowrap justify-start md:justify-between
   return (
     <footer className={styles.Footer}>
       <div className="container">
-        <div className="flex justify-between pb-[54px]">
-          <Logo variant={"secondary"} />
+        <div className="grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8 justify-items-start md:justify-items-center pb-[54px]">
+          <Logo className="col-span-2 md:col-span-1" variant={"secondary"} />
 
-          <div>
+          <div className="col-span-1 md:col-span-2">
             <p>For Talents</p>
 
             <ul className="mt-7 space-y-[18px]">
@@ -19,7 +20,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="col-span-1 md:col-span-2">
             <p>For Businesses</p>
 
             <ul className="mt-7 space-y-[18px]">
@@ -30,7 +31,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="col-span-1 md:col-span-3">
             <p>Tools</p>
 
             <ul className="mt-7 space-y-[18px]">
@@ -40,7 +41,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="col-span-1 md:col-span-2">
             <p>Resources</p>
 
             <ul className="mt-7 space-y-[18px]">
@@ -54,7 +55,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="col-span-1 md:col-span-2">
             <p>Collaborate</p>
 
             <ul className="mt-7 space-y-[18px]">
@@ -67,8 +68,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex items-center justify-between border-t border-secondary pt-10">
-          <div className="flex items-center gap-x-10">
+        <div className="flex flex-col md:flex-row items-center justify-between border-t border-secondary pt-5 md:pt-10">
+          <div className="flex flex-col md:flex-row items-center gap-y-3 md:gap-y-0 gap-x-10">
             <p>Copyright ©2023 ruul.io</p>
 
             <ul className="flex items-center gap-x-5">
@@ -78,7 +79,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <ul className="flex items-center gap-x-4">
+          <ul className="flex items-center gap-x-4 mt-4 md:mt-0">
             <li>
               <span className="socials">
                 <svg
@@ -138,5 +139,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

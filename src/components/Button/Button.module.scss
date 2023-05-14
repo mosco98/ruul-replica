@@ -1,6 +1,10 @@
 .Button {
   @apply flex flex-shrink-0 items-center justify-center rounded-lg px-8 py-3;
 
+  span, svg {
+    @apply flex-shrink-0;
+  }
+
   &.fill {
     @apply bg-primary text-[#cafdc6] hover:bg-[#00554e] transition-all duration-300 ease-in-out;
   }

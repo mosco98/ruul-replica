@@ -1,11 +1,11 @@
-import klarna from "../../assets/images/Klarna.png";
-import massachusetts from "../../assets/images/Massachusetts.png";
-import mckinsey from "../../assets/images/Mckinsey.png";
-import toyota from "../../assets/images/Toyota.png";
-import heroImg from "../../assets/images/hero.svg";
-import { Button } from "../Button";
-import { PartnerCard } from "../PartnerCard";
-import styles from "./Hero.module.scss";
+import klarna from "../../assets/images/Klarna.png"
+import massachusetts from "../../assets/images/Massachusetts.png"
+import mckinsey from "../../assets/images/Mckinsey.png"
+import toyota from "../../assets/images/Toyota.png"
+import heroImg from "../../assets/images/hero.svg"
+import { Button } from "../Button"
+import { PartnerCard } from "../PartnerCard"
+import styles from "./Hero.module.scss"
 
 export default function Hero() {
   return (
@@ -13,11 +13,11 @@ export default function Hero() {
       <div className="container relative grid grid-cols-1 gap-x-8 md:grid-cols-12">
         <div className="col-span-1 text-primary md:col-span-7">
           <h6 className="font-medium uppercase tracking-[1.12px]">worktech</h6>
-          <h1 className="mt-3 max-w-[90%] font-medium tracking-[-0.04em]">
+          <h1 className="mt-3 max-w-full md:max-w-[90%] font-medium tracking-[-0.04em]">
             The infrastructure of modern work
           </h1>
 
-          <h4 className="mt-6 max-w-[80%] tracking-[-0.04em]">
+          <h4 className="mt-6 max-w-full md:max-w-[80%] tracking-[-0.04em]">
             Engineering new ways of connecting talents and organizations to
             enhance their financial performance and simplify compliance.
           </h4>
@@ -86,5 +86,5 @@ export default function Hero() {
         </PartnerCard>
       </div>
     </section>
-  );
+  )
 }

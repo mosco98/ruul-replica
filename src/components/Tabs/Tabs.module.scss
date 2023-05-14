@@ -2,7 +2,7 @@
 }
 
 .Tab {
-  @apply cursor-pointer rounded-[48px] bg-white px-8 py-2 text-[20px] font-medium;
+  @apply cursor-pointer rounded-[10px] md:rounded-[48px] bg-white px-8 py-2 text-base md:text-[20px] font-medium;
 
   &.active {
     @apply bg-primary text-secondary;
