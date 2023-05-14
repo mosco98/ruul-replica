@@ -1,26 +1,26 @@
-import { Button } from "../Button"
-import { Logo } from "../Logo"
-import { Megamenu } from "../Megamenu"
-import styles from "./Navbar.module.scss"
+import { Button } from "../Button";
+import { Logo } from "../Logo";
+import { Megamenu } from "../Megamenu";
+import styles from "./Navbar.module.scss";
 
 export default function Navbar() {
   return (
     <nav className={styles.Navbar}>
       <div className="container">
-        <div className="flex items-center space-x-11 flex-1">
+        <div className="flex flex-1 items-center space-x-11">
           <Logo variant={"primary"} />
 
           <Megamenu title={"For Talents"}>
             <div className="grid grid-cols-2">
-              <div className="bg-secondary px-10 py-8 border-r-[0.5px] border-primary">
+              <div className="border-r-[0.5px] border-primary bg-secondary px-10 py-8">
                 <h3 className="font-medium">Rull For Talents</h3>
 
-                <p className="font-normal mt-6">
+                <p className="mt-6 font-normal">
                   A new connection protocol for modern talents to connect with
                   businesses globally.
                 </p>
 
-                <div className="overflow-hidden rounded-lg mt-6">
+                <div className="mt-6 overflow-hidden rounded-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={387}
@@ -590,10 +590,10 @@ export default function Navbar() {
                 <Button
                   text={"See all talent solutions"}
                   variant={"fill"}
-                  className={"w-full mt-6"}
+                  className={"mt-6 w-full"}
                 />
               </div>
-              <div className="bg-white px-10 py-8 border-l-[0.5px] border-primary flex items-center justify-center">
+              <div className="flex items-center justify-center border-l-[0.5px] border-primary bg-white px-10 py-8">
                 Coming soon
               </div>
             </div>
@@ -601,15 +601,15 @@ export default function Navbar() {
 
           <Megamenu title={"For Businesses"}>
             <div className="grid grid-cols-2">
-              <div className="bg-[#ffc1ae] px-10 py-8 border-r-[0.5px] border-primary">
+              <div className="border-r-[0.5px] border-primary bg-[#ffc1ae] px-10 py-8">
                 <h3 className="font-medium">Rull For Businesses</h3>
 
-                <p className="font-normal mt-6">
+                <p className="mt-6 font-normal">
                   A new connection protocol for modern talents to connect with
                   businesses globally.
                 </p>
 
-                <div className="overflow-hidden rounded-lg mt-6">
+                <div className="mt-6 overflow-hidden rounded-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={387}
@@ -1179,30 +1179,30 @@ export default function Navbar() {
                 <Button
                   text={"See all talent solutions"}
                   variant={"fill"}
-                  className={"w-full mt-6"}
+                  className={"mt-6 w-full"}
                 />
               </div>
-              <div className="bg-white px-10 py-8 border-l-[0.5px] border-primary">
+              <div className="border-l-[0.5px] border-primary bg-white px-10 py-8">
                 2
               </div>
             </div>
           </Megamenu>
 
-          <span className="cursor-pointer text-[20px] hidden md:block">
+          <span className="hidden cursor-pointer text-[20px] md:block">
             Pricing
           </span>
 
           <Megamenu title={"Collaborate"}>
             <div className="grid grid-cols-2">
-              <div className="bg-[#feeeca] px-10 py-8 border-r-[0.5px] border-primary">
+              <div className="border-r-[0.5px] border-primary bg-[#feeeca] px-10 py-8">
                 <h3 className="font-medium">Partner Programs</h3>
 
-                <p className="font-normal mt-6">
+                <p className="mt-6 font-normal">
                   A new connection protocol for modern talents to connect with
                   businesses globally.
                 </p>
 
-                <div className="overflow-hidden rounded-lg mt-6">
+                <div className="mt-6 overflow-hidden rounded-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={387}
@@ -1772,10 +1772,10 @@ export default function Navbar() {
                 <Button
                   text={"See all talent solutions"}
                   variant={"fill"}
-                  className={"w-full mt-6"}
+                  className={"mt-6 w-full"}
                 />
               </div>
-              <div className="bg-white px-10 py-8 border-l-[0.5px] border-primary flex items-center justify-center">
+              <div className="flex items-center justify-center border-l-[0.5px] border-primary bg-white px-10 py-8">
                 Coming soon
               </div>
             </div>
@@ -1783,15 +1783,15 @@ export default function Navbar() {
 
           <Megamenu title={"Resources"}>
             <div className="grid grid-cols-2">
-              <div className="bg-secondary px-10 py-8 border-r-[0.5px] border-primary">
+              <div className="border-r-[0.5px] border-primary bg-secondary px-10 py-8">
                 <h3 className="font-medium">Rull For Talents</h3>
 
-                <p className="font-normal mt-6">
+                <p className="mt-6 font-normal">
                   A new connection protocol for modern talents to connect with
                   businesses globally.
                 </p>
 
-                <div className="overflow-hidden rounded-lg mt-6">
+                <div className="mt-6 overflow-hidden rounded-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={387}
@@ -2361,21 +2361,21 @@ export default function Navbar() {
                 <Button
                   text={"See all talent solutions"}
                   variant={"fill"}
-                  className={"w-full mt-6"}
+                  className={"mt-6 w-full"}
                 />
               </div>
-              <div className="bg-white px-10 py-8 border-l-[0.5px] border-primary flex items-center justify-center">
+              <div className="flex items-center justify-center border-l-[0.5px] border-primary bg-white px-10 py-8">
                 Coming Soon
               </div>
             </div>
           </Megamenu>
         </div>
 
-        <div className="hidden md:flex items-center space-x-5">
+        <div className="hidden items-center space-x-5 md:flex">
           <Button variant={"outline"} text="Login" />
           <Button variant={"fill"} text="Sign up" />
         </div>
       </div>
     </nav>
-  )
+  );
 }

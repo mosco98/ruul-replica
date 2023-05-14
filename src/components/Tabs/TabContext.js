@@ -1,22 +1,22 @@
-const { createContext, useContext, useState, useEffect } = require("react")
+const { createContext, useContext, useState, useEffect } = require("react");
 
-const TabContext = createContext()
+const TabContext = createContext();
 
-export const useTabContext = () => useContext(TabContext)
+export const useTabContext = () => useContext(TabContext);
 
 export function TabContextProvider({ children, defaultIndex }) {
-  const [currentIndex, setCurrentIndex] = useState()
+  const [currentIndex, setCurrentIndex] = useState();
 
   useEffect(() => {
     if (defaultIndex) {
-      setCurrentIndex(defaultIndex)
+      setCurrentIndex(defaultIndex);
     } else {
-      setCurrentIndex(0)
+      setCurrentIndex(0);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, []);
 
-  const value = { currentIndex, setCurrentIndex }
+  const value = { currentIndex, setCurrentIndex };
 
-  return <TabContext.Provider value={value}>{children}</TabContext.Provider>
+  return <TabContext.Provider value={value}>{children}</TabContext.Provider>;
 }

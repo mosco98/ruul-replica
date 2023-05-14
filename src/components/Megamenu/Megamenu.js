@@ -1,35 +1,35 @@
-import classNames from "classnames"
-import { AnimatePresence, motion } from "framer-motion"
-import { useEffect, useRef, useState } from "react"
-import styles from "./Megamenu.module.scss"
+import classNames from "classnames";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import styles from "./Megamenu.module.scss";
 
 export default function Megamenu({ title, children }) {
-  const [showOptions, setShowOptions] = useState(false)
-  const ref = useRef()
+  const [showOptions, setShowOptions] = useState(false);
+  const ref = useRef();
 
   const handleClickOutside = (event) => {
     if (ref.current && !ref.current.contains(event.target)) {
-      setShowOptions(false)
+      setShowOptions(false);
     }
-  }
+  };
 
   useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside)
+    document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [])
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className={styles.Megamenu} ref={ref}>
       <div
-        className="flex items-center space-x-2 cursor-pointer"
+        className="flex cursor-pointer items-center space-x-2"
         onClick={() => setShowOptions(!showOptions)}
       >
         <span
           className={classNames(
-            "text-[20px] leading-5 select-none",
+            "select-none text-[20px] leading-5",
             showOptions && "text-lightPrimary"
           )}
         >
@@ -41,10 +41,10 @@ export default function Megamenu({ title, children }) {
           viewBox="0 0 24 24"
           strokeWidth="3.2"
           stroke="currentColor"
-          className="w-4 h-4"
+          className="h-4 w-4"
           // initial={{ transform: "rotate(0deg)" }}
           animate={{
-            transform: showOptions ? "rotate(180deg)" : "rotate(0deg)"
+            transform: showOptions ? "rotate(180deg)" : "rotate(0deg)",
           }}
           transition={{ type: "spring", bounce: 0.2 }}
         >
@@ -70,5 +70,5 @@ export default function Megamenu({ title, children }) {
         )}
       </AnimatePresence>
     </div>
-  )
+  );
 }

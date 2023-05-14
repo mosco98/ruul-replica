@@ -1,5 +1,5 @@
 .Hero {
-  @apply bg-secondary pt-24 pb-16 md:pb-0 border-b border-primary;
+  @apply border-b border-primary bg-secondary pb-16 pt-24 md:pb-0;
 
   .heroImg {
     width: auto;

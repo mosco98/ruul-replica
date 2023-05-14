@@ -1,34 +1,34 @@
-import { motion } from "framer-motion"
-import styles from "./Accordion.module.scss"
-import { useAccordionContext } from "./AccordionContext"
+import { motion } from "framer-motion";
+import styles from "./Accordion.module.scss";
+import { useAccordionContext } from "./AccordionContext";
 
 export default function AccordionItem({ title, content, index }) {
-  const { currentIndex, setCurrentIndex } = useAccordionContext()
+  const { currentIndex, setCurrentIndex } = useAccordionContext();
 
   const variants = {
     closed: { height: "0", marginTop: "0px", opacity: 0 },
-    open: { height: "auto", marginTop: "8px", opacity: 1 }
-  }
+    open: { height: "auto", marginTop: "8px", opacity: 1 },
+  };
 
   return (
     <div className={styles.AccordionItem}>
       <div
-        className="flex items-center justify-between cursor-pointer"
+        className="flex cursor-pointer items-center justify-between"
         onClick={() => setCurrentIndex(currentIndex === index ? null : index)}
       >
-        <h5 className="font-medium tracking-[-0.04em] max-w-[90%]">{title}</h5>
+        <h5 className="max-w-[90%] font-medium tracking-[-0.04em]">{title}</h5>
 
-        <span className="w-10 h-10 rounded-[4px] bg-primary flex items-center justify-center">
+        <span className="flex h-10 w-10 items-center justify-center rounded-[4px] bg-primary">
           <motion.svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="3.5"
             stroke="currentColor"
-            className="w-3 h-3 text-secondary"
+            className="h-3 w-3 text-secondary"
             animate={{
               transform:
-                currentIndex === index ? "rotate(180deg)" : "rotate(0deg)"
+                currentIndex === index ? "rotate(180deg)" : "rotate(0deg)",
             }}
             transition={{ ease: "easeInOut", duration: 0.25 }}
           >
@@ -47,8 +47,8 @@ export default function AccordionItem({ title, content, index }) {
         animate={currentIndex === index ? "open" : "closed"}
         transition={{ ease: "easeInOut", duration: 0.35 }}
       >
-        <h5 className="tracking-[-0.04em] max-w-[95%]">{content}</h5>
+        <h5 className="max-w-[95%] tracking-[-0.04em]">{content}</h5>
       </motion.div>
     </div>
-  )
+  );
 }

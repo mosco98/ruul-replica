@@ -46,11 +46,11 @@ p {
 }
 
 .container {
-  @apply mx-auto px-[5%];
+  @apply px-[5%] mx-auto;
 }
 
 .protocol-icons {
-  @apply w-12 h-12 rounded-full flex items-center justify-center border border-primary flex-none mt-1;
+  @apply mt-1 flex h-12 w-12 flex-none items-center justify-center rounded-full border border-primary;
   box-shadow: 3px 3px #013e39;
 
   img {
@@ -87,9 +87,9 @@ p {
 }
 
 .user-stories-card {
-  @apply p-10 rounded-lg bg-white flex flex-col justify-between gap-8;
+  @apply flex flex-col justify-between gap-8 rounded-lg bg-white p-10;
 }
 
 .socials {
-  @apply w-12 h-12 bg-secondary rounded-full flex items-center justify-center p-4;
+  @apply flex h-12 w-12 items-center justify-center rounded-full bg-secondary p-4;
 }

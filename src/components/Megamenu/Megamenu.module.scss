@@ -2,7 +2,7 @@
   @apply hidden md:block;
 
   .dropdown {
-    @apply absolute top-full left-52 mt-2 border border-primary rounded-lg w-[70%] max-w-[840px] overflow-hidden;
+    @apply absolute left-52 top-full mt-2 w-[70%] max-w-[840px] overflow-hidden rounded-lg border border-primary;
 
     z-index: 100000;
   }

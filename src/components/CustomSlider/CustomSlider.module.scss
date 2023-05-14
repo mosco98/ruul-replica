@@ -3,7 +3,7 @@
 
   .Prev,
   .Next {
-    @apply w-10 h-10 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 ease-in-out;
+    @apply flex h-10 w-10 cursor-pointer items-center justify-center rounded-full transition-all duration-300 ease-in-out;
 
     display: flex !important;
     align-items: center !important;

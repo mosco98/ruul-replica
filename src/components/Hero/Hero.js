@@ -1,35 +1,35 @@
-import klarna from "../../assets/images/Klarna.png"
-import massachusetts from "../../assets/images/Massachusetts.png"
-import mckinsey from "../../assets/images/Mckinsey.png"
-import toyota from "../../assets/images/Toyota.png"
-import heroImg from "../../assets/images/hero.svg"
-import { Button } from "../Button"
-import { PartnerCard } from "../PartnerCard"
-import styles from "./Hero.module.scss"
+import klarna from "../../assets/images/Klarna.png";
+import massachusetts from "../../assets/images/Massachusetts.png";
+import mckinsey from "../../assets/images/Mckinsey.png";
+import toyota from "../../assets/images/Toyota.png";
+import heroImg from "../../assets/images/hero.svg";
+import { Button } from "../Button";
+import { PartnerCard } from "../PartnerCard";
+import styles from "./Hero.module.scss";
 
 export default function Hero() {
   return (
     <section className={styles.Hero}>
-      <div className="container grid grid-cols-1 md:grid-cols-12 gap-x-8 relative">
-        <div className="col-span-1 md:col-span-7 text-primary">
-          <h6 className="uppercase tracking-[1.12px] font-medium">worktech</h6>
-          <h1 className="mt-3 font-medium tracking-[-0.04em] max-w-[90%]">
+      <div className="container relative grid grid-cols-1 gap-x-8 md:grid-cols-12">
+        <div className="col-span-1 text-primary md:col-span-7">
+          <h6 className="font-medium uppercase tracking-[1.12px]">worktech</h6>
+          <h1 className="mt-3 max-w-[90%] font-medium tracking-[-0.04em]">
             The infrastructure of modern work
           </h1>
 
-          <h4 className="mt-6 tracking-[-0.04em] max-w-[80%]">
+          <h4 className="mt-6 max-w-[80%] tracking-[-0.04em]">
             Engineering new ways of connecting talents and organizations to
             enhance their financial performance and simplify compliance.
           </h4>
 
-          <div className="mt-10 flex flex-col md:flex-row items-center gap-6">
+          <div className="mt-10 flex flex-col items-center gap-6 md:flex-row">
             <Button
-              className={"py-4 w-full md:w-auto"}
+              className={"w-full py-4 md:w-auto"}
               text={`I'm a Talent`}
               variant={"fill"}
             />
             <Button
-              className={"py-4 w-full md:w-auto"}
+              className={"w-full py-4 md:w-auto"}
               text={`I'm a Business`}
               variant={"outline"}
             />
@@ -63,12 +63,12 @@ export default function Hero() {
             </svg>
           </div>
         </div>
-        <div className="col-span-5 pt-1 hidden md:block">
+        <div className="col-span-5 hidden pt-1 md:block">
           <img className={styles.heroImg} src={heroImg} alt="hero-svg" />
         </div>
       </div>
 
-      <div className="container grid grid-cols-2 md:grid-cols-4 gap-10 translate-y-0 md:translate-y-14 mt-6 md:mt-14">
+      <div className="container mt-6 grid translate-y-0 grid-cols-2 gap-10 md:mt-14 md:translate-y-14 md:grid-cols-4">
         <PartnerCard>
           <img src={klarna} alt="klarna-img" />
         </PartnerCard>
@@ -86,5 +86,5 @@ export default function Hero() {
         </PartnerCard>
       </div>
     </section>
-  )
+  );
 }

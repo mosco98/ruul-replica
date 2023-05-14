@@ -1,11 +1,11 @@
-import Slider from "react-slick"
-import "slick-carousel/slick/slick-theme.css"
-import "slick-carousel/slick/slick.css"
-import styles from "./CustomSlider.module.scss"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import styles from "./CustomSlider.module.scss";
 
 export default function CustomSlider({ title, subTitle, children }) {
   const CustomPrevArrow = (props) => {
-    const { className, style, onClick } = props
+    const { className, style, onClick } = props;
     return (
       <span
         className={styles.Prev + " " + className}
@@ -18,7 +18,7 @@ export default function CustomSlider({ title, subTitle, children }) {
           viewBox="0 0 24 24"
           strokeWidth="3.5"
           stroke="currentColor"
-          className="w-3 h-3"
+          className="h-3 w-3"
         >
           <path
             strokeLinecap="round"
@@ -27,11 +27,11 @@ export default function CustomSlider({ title, subTitle, children }) {
           />
         </svg>
       </span>
-    )
-  }
+    );
+  };
 
   const CustomNextArrow = (props) => {
-    const { className, style, onClick } = props
+    const { className, style, onClick } = props;
     return (
       <span
         className={styles.Next + " " + className}
@@ -44,7 +44,7 @@ export default function CustomSlider({ title, subTitle, children }) {
           viewBox="0 0 24 24"
           strokeWidth="3.5"
           stroke="currentColor"
-          className="w-3 h-3"
+          className="h-3 w-3"
         >
           <path
             strokeLinecap="round"
@@ -53,8 +53,8 @@ export default function CustomSlider({ title, subTitle, children }) {
           />
         </svg>
       </span>
-    )
-  }
+    );
+  };
 
   const settings = {
     dots: false,
@@ -63,14 +63,14 @@ export default function CustomSlider({ title, subTitle, children }) {
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />
-  }
+    nextArrow: <CustomNextArrow />,
+  };
 
   return (
     <div className={styles.Slider}>
       <div className="flex items-end justify-between">
         <div>
-          <h6 className="uppercase tracking-[1.12px] font-medium text-secondary">
+          <h6 className="font-medium uppercase tracking-[1.12px] text-secondary">
             {subTitle}
           </h6>
           <h1 className="mt-3 font-medium tracking-[-0.04em] text-secondary">
@@ -119,12 +119,12 @@ export default function CustomSlider({ title, subTitle, children }) {
       <div className="mt-[60px] w-full">
         <Slider {...settings}>
           {children.map((slide, i) => (
-            <div key={i} className="rounded-lg overflow-hidden">
+            <div key={i} className="overflow-hidden rounded-lg">
               {slide}
             </div>
           ))}
         </Slider>
       </div>
     </div>
-  )
+  );
 }

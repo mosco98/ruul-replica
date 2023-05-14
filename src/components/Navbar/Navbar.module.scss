@@ -1,7 +1,7 @@
 .Navbar {
-  @apply bg-secondary text-primary border-b border-primary;
+  @apply border-b border-primary bg-secondary text-primary;
 
   & > div {
-    @apply flex items-center justify-between relative py-6;
+    @apply relative flex items-center justify-between py-6;
   }
 }

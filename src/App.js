@@ -1,28 +1,28 @@
-import attachmentDetachmentSvg from "./assets/images/attachment-detachment.svg"
-import complianceSvg from "./assets/images/compliance.svg"
-import growAndThriveSectionSvg from "./assets/images/grow-and-thrive-section.svg"
-import invoicingSvg from "./assets/images/invoicing.svg"
-import ruulLong from "./assets/images/ruul-long.svg"
-import standardizationSvg from "./assets/images/standardization.svg"
-import { Accordion, AccordionItem } from "./components/Accordion"
-import { Button } from "./components/Button"
-import { CustomSlider } from "./components/CustomSlider"
-import { Hero } from "./components/Hero"
-import Layout from "./components/Layout"
-import { Tab, TabPanel, Tabs } from "./components/Tabs"
+import attachmentDetachmentSvg from "./assets/images/attachment-detachment.svg";
+import complianceSvg from "./assets/images/compliance.svg";
+import growAndThriveSectionSvg from "./assets/images/grow-and-thrive-section.svg";
+import invoicingSvg from "./assets/images/invoicing.svg";
+import ruulLong from "./assets/images/ruul-long.svg";
+import standardizationSvg from "./assets/images/standardization.svg";
+import { Accordion, AccordionItem } from "./components/Accordion";
+import { Button } from "./components/Button";
+import { CustomSlider } from "./components/CustomSlider";
+import { Hero } from "./components/Hero";
+import Layout from "./components/Layout";
+import { Tab, TabPanel, Tabs } from "./components/Tabs";
 
 export default function App() {
   return (
     <Layout>
       <Hero />
 
-      <section className="bg-white pt-64 pb-32">
-        <div className="container grid grid-cols-1 md:grid-cols-11 gap-0 md:gap-16">
+      <section className="bg-white pb-32 pt-64">
+        <div className="container grid grid-cols-1 gap-0 md:grid-cols-11 md:gap-16">
           <div className="col-span-5 hidden md:block">
             <img src={ruulLong} alt="ruul-long" />
           </div>
           <div className="col-span-1 md:col-span-6">
-            <h6 className="uppercase tracking-[1.12px] font-medium">
+            <h6 className="font-medium uppercase tracking-[1.12px]">
               AGENCY OF RECORD
             </h6>
             <h1 className="mt-3 font-medium tracking-[-0.04em]">
@@ -35,8 +35,8 @@ export default function App() {
               Ruul pioneers this revolutionary transformation.
             </h4>
 
-            <div className="border border-primary rounded-lg flex items-center gap-x-4 bg-[#feefca] p-5 mt-10">
-              <span className="w-6 h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+            <div className="mt-10 flex items-center gap-x-4 rounded-lg border border-primary bg-[#feefca] p-5">
+              <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-primary">
                 <svg
                   width={16}
                   height={16}
@@ -60,14 +60,14 @@ export default function App() {
               </p>
             </div>
 
-            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-x-0 md:gap-x-4 gap-y-10">
+            <div className="mt-10 grid grid-cols-1 gap-x-0 gap-y-10 md:grid-cols-2 md:gap-x-4">
               <div className="flex gap-x-4">
                 <span className="protocol-icons">
                   <img loading="lazy" src={invoicingSvg} alt="" />
                 </span>
 
                 <div>
-                  <h4 className="font-medium tracking-[ -0.04em]">
+                  <h4 className="tracking-[ -0.04em] font-medium">
                     Streamlined compliance
                   </h4>
 
@@ -83,7 +83,7 @@ export default function App() {
                 </span>
 
                 <div>
-                  <h4 className="font-medium tracking-[ -0.04em]">
+                  <h4 className="tracking-[ -0.04em] font-medium">
                     Financial enhancement
                   </h4>
 
@@ -100,7 +100,7 @@ export default function App() {
                 </span>
 
                 <div>
-                  <h4 className="font-medium tracking-[ -0.04em]">
+                  <h4 className="tracking-[ -0.04em] font-medium">
                     Easy attachment & detachment
                   </h4>
 
@@ -117,7 +117,7 @@ export default function App() {
                 </span>
 
                 <div>
-                  <h4 className="font-medium tracking-[ -0.04em]">
+                  <h4 className="tracking-[ -0.04em] font-medium">
                     Cross-border standardization
                   </h4>
 
@@ -134,17 +134,17 @@ export default function App() {
 
       <section className="bg-primary py-32">
         <div className="container">
-          <h6 className="uppercase tracking-[1.12px] font-medium text-secondary">
+          <h6 className="font-medium uppercase tracking-[1.12px] text-secondary">
             THE NEW WAY OF WORK
           </h6>
-          <div className="grid grid-cols-1 md:grid-cols-11 gap-16 text-secondary mt-3">
+          <div className="mt-3 grid grid-cols-1 gap-16 text-secondary md:grid-cols-11">
             <div className="col-span-1 md:col-span-6">
               <h1 className="mt-3 font-medium tracking-[-0.04em]">
                 Tailored for the new economy
               </h1>
             </div>
 
-            <div className="self-end col-span-1 md:col-span-5">
+            <div className="col-span-1 self-end md:col-span-5">
               <h4 className="tracking-[-0.04em]">
                 Ruul's technology caters to the unique needs of modern talents
                 and businesses. Our mission is empowering agility, autonomy, and
@@ -153,9 +153,9 @@ export default function App() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-24">
-            <div className="bg-white px-10 pt-[60px] pb-10 rounded-lg">
-              <span className="w-[72px] h-[72px] rounded-lg border border-primary flex items-center justify-center mx-auto shadow-4px p-4 bg-white">
+          <div className="mt-24 grid grid-cols-1 gap-12 md:grid-cols-2">
+            <div className="rounded-lg bg-white px-10 pb-10 pt-[60px]">
+              <span className="shadow-4px mx-auto flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-white p-4">
                 <svg
                   width={62}
                   height={62}
@@ -181,22 +181,22 @@ export default function App() {
                 </svg>
               </span>
 
-              <h2 className="font-medium tracking-[-0.04em] mt-10 text-center">
+              <h2 className="mt-10 text-center font-medium tracking-[-0.04em]">
                 For Talents
               </h2>
 
-              <h6 className="font-medium tracking-[-0.08em] uppercase text-center mt-1">
+              <h6 className="mt-1 text-center font-medium uppercase tracking-[-0.08em]">
                 in 120 countries
               </h6>
 
-              <div className="p-5 rounded-lg border border-primary text-center mt-[42px]">
+              <div className="mt-[42px] rounded-lg border border-primary p-5 text-center">
                 <h5 className="tracking-[-0.04em]">
                   Empower your independent career with financial autonomy. Work
                   with any business worldwide, effortlessly and compliantly.
                 </h5>
               </div>
 
-              <div className="mt-10 grid grid-cols-2 gap-y-5 gap-x-8 max-w-fit mx-auto justify-items-start">
+              <div className="mx-auto mt-10 grid max-w-fit grid-cols-2 justify-items-start gap-x-8 gap-y-5">
                 <span className="flex items-center justify-center gap-x-2">
                   <svg
                     width={24}
@@ -219,7 +219,7 @@ export default function App() {
                     />
                   </svg>
 
-                  <p className="tracking-[-0.01em] font-medium">
+                  <p className="font-medium tracking-[-0.01em]">
                     Global Invoicing
                   </p>
                 </span>
@@ -246,7 +246,7 @@ export default function App() {
                     />
                   </svg>
 
-                  <p className="tracking-[-0.01em] font-medium">
+                  <p className="font-medium tracking-[-0.01em]">
                     Payment Collection
                   </p>
                 </span>
@@ -273,7 +273,7 @@ export default function App() {
                     />
                   </svg>
 
-                  <p className="tracking-[-0.01em] font-medium">
+                  <p className="font-medium tracking-[-0.01em]">
                     Borderless Banking
                   </p>
                 </span>
@@ -300,7 +300,7 @@ export default function App() {
                     />
                   </svg>
 
-                  <p className="tracking-[-0.01em] font-medium">
+                  <p className="font-medium tracking-[-0.01em]">
                     Tax Assistance
                   </p>
                 </span>
@@ -308,7 +308,7 @@ export default function App() {
 
               <Button
                 text={"Explore Talent Solutions"}
-                className={"w-full mt-10 py-4"}
+                className={"mt-10 w-full py-4"}
                 variant={"fill"}
                 icon={
                   <svg
@@ -331,8 +331,8 @@ export default function App() {
               </p>
             </div>
 
-            <div className="bg-[#fec1ae] px-10 pt-[60px] pb-10 rounded-lg">
-              <span className="w-[72px] h-[72px] rounded-lg border border-primary flex items-center justify-center mx-auto shadow-4px p-4 bg-white">
+            <div className="rounded-lg bg-[#fec1ae] px-10 pb-10 pt-[60px]">
+              <span className="shadow-4px mx-auto flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-white p-4">
                 <svg
                   width={55}
                   height={55}
@@ -366,15 +366,15 @@ export default function App() {
                 </svg>
               </span>
 
-              <h2 className="font-medium tracking-[-0.04em] mt-10 text-center">
+              <h2 className="mt-10 text-center font-medium tracking-[-0.04em]">
                 For Businesses
               </h2>
 
-              <h6 className="font-medium tracking-[-0.08em] uppercase text-center mt-1">
+              <h6 className="mt-1 text-center font-medium uppercase tracking-[-0.08em]">
                 in 120 countries
               </h6>
 
-              <div className="p-5 rounded-lg border border-primary text-center mt-[42px]">
+              <div className="mt-[42px] rounded-lg border border-primary p-5 text-center">
                 <h5 className="tracking-[-0.04em]">
                   Stay agile by working with talents all around the world.
                   Streamline your talent operations with an easy attachment and
@@ -382,7 +382,7 @@ export default function App() {
                 </h5>
               </div>
 
-              <div className="mt-10 grid grid-cols-2 gap-y-5 max-w-fit mx-auto justify-items-start">
+              <div className="mx-auto mt-10 grid max-w-fit grid-cols-2 justify-items-start gap-y-5">
                 <span className="flex items-center justify-center gap-x-2">
                   <svg
                     width={24}
@@ -405,7 +405,7 @@ export default function App() {
                     />
                   </svg>
 
-                  <p className="tracking-[-0.01em] font-medium">
+                  <p className="font-medium tracking-[-0.01em]">
                     Agency of Record
                   </p>
                 </span>
@@ -432,7 +432,7 @@ export default function App() {
                     />
                   </svg>
 
-                  <p className="tracking-[-0.01em] font-medium">
+                  <p className="font-medium tracking-[-0.01em]">
                     Multi-currency Payments
                   </p>
                 </span>
@@ -459,7 +459,7 @@ export default function App() {
                     />
                   </svg>
 
-                  <p className="tracking-[-0.01em] font-medium">
+                  <p className="font-medium tracking-[-0.01em]">
                     Global Payroll
                   </p>
                 </span>
@@ -486,7 +486,7 @@ export default function App() {
                     />
                   </svg>
 
-                  <p className="tracking-[-0.01em] font-medium">
+                  <p className="font-medium tracking-[-0.01em]">
                     Talent Management
                   </p>
                 </span>
@@ -494,7 +494,7 @@ export default function App() {
 
               <Button
                 text={"Explore Business Solutions"}
-                className={"w-full mt-10 py-4"}
+                className={"mt-10 w-full py-4"}
                 variant={"fill"}
                 icon={
                   <svg
@@ -522,17 +522,17 @@ export default function App() {
 
       <section className="bg-[#feeeca] py-32">
         <div className="container">
-          <h6 className="uppercase tracking-[1.12px] font-medium">
+          <h6 className="font-medium uppercase tracking-[1.12px]">
             WORK SOLUTIONS FOR TODAY
           </h6>
-          <div className="grid grid-cols-1 md:grid-cols-11 gap-16 mt-3">
+          <div className="mt-3 grid grid-cols-1 gap-16 md:grid-cols-11">
             <div className="col-span-1 md:col-span-6">
               <h1 className="mt-3 font-medium tracking-[-0.04em]">
                 Remedies for the new work landscape
               </h1>
             </div>
 
-            <div className="self-end col-span-1 md:col-span-5">
+            <div className="col-span-1 self-end md:col-span-5">
               <h4 className="tracking-[-0.04em]">
                 Discover our smart worktech solutions and products designed to
                 future-proof your work, and meet today's needs with ease.
@@ -542,7 +542,7 @@ export default function App() {
 
           <div className="mt-24">
             <Tabs defaultIndex={1}>
-              <div className="w-full md:w-fit mx-auto flex items-center bg-white p-1 rounded-[44px] border border-primary relative">
+              <div className="relative mx-auto flex w-full items-center rounded-[44px] border border-primary bg-white p-1 md:w-fit">
                 <Tab title={"For Talents"} index={1} />
                 <Tab title={"For Businesses"} index={2} />
 
@@ -563,9 +563,9 @@ export default function App() {
 
               <div className="mt-[72px]">
                 <TabPanel index={1}>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div className="bg-white p-10 rounded-lg border border-primary">
-                      <span className="w-[72px] h-[72px] rounded-lg border border-primary flex items-center justify-center shadow-4px p-4 bg-secondary">
+                  <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+                    <div className="rounded-lg border border-primary bg-white p-10">
+                      <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={59}
                           height={59}
@@ -664,16 +664,16 @@ export default function App() {
                         </svg>
                       </span>
 
-                      <h2 className="font-medium tracking-[-0.04em] mt-10">
+                      <h2 className="mt-10 font-medium tracking-[-0.04em]">
                         Global Invoicing
                       </h2>
 
-                      <h5 className="font-medium tracking-[-0.04em] mt-5">
+                      <h5 className="mt-5 font-medium tracking-[-0.04em]">
                         Invoice your clients across 120 countries compliantly
                         and get paid without having to set up a legal entity.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 gap-5 justify-items-start">
+                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -696,7 +696,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Free account setup
                           </p>
                         </span>
@@ -723,7 +723,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Multi-currency invoicing
                           </p>
                         </span>
@@ -750,7 +750,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Secure payments
                           </p>
                         </span>
@@ -777,7 +777,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Get paid faster
                           </p>
                         </span>
@@ -785,7 +785,7 @@ export default function App() {
 
                       <Button
                         text={"Explore Global Invoicing"}
-                        className={"w-full mt-10 py-4"}
+                        className={"mt-10 w-full py-4"}
                         variant={"fill"}
                         icon={
                           <svg
@@ -803,10 +803,10 @@ export default function App() {
                         }
                       />
                     </div>
-                    <div className="bg-[url('./assets/images/tab1grid2.svg')] bg-cover bg-center bg-no-repeat rounded-lg p-8 border border-primary hidden md:block" />
-                    <div className="bg-[url('./assets/images/tab1grid3.svg')] bg-cover bg-center bg-no-repeat rounded-lg p-8 border border-primary hidden md:block" />
-                    <div className="bg-white p-10 rounded-lg border border-primary">
-                      <span className="w-[72px] h-[72px] rounded-lg border border-primary flex items-center justify-center shadow-4px p-4 bg-secondary">
+                    <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab1grid2.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
+                    <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab1grid3.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
+                    <div className="rounded-lg border border-primary bg-white p-10">
+                      <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={49}
                           height={49}
@@ -869,16 +869,16 @@ export default function App() {
                         </svg>
                       </span>
 
-                      <h2 className="font-medium tracking-[-0.04em] mt-10">
+                      <h2 className="mt-10 font-medium tracking-[-0.04em]">
                         Payment Collection
                       </h2>
 
-                      <h5 className="font-medium tracking-[-0.04em] mt-5">
+                      <h5 className="mt-5 font-medium tracking-[-0.04em]">
                         Ensure a seamless, business-friendly checkout for your
                         clients and accelerate your payment process.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 gap-5 justify-items-start">
+                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -901,7 +901,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Secure payment processing
                           </p>
                         </span>
@@ -928,7 +928,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Flexible pay-out options
                           </p>
                         </span>
@@ -955,7 +955,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             140+ currencies
                           </p>
                         </span>
@@ -982,7 +982,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Get paid within 1 business day
                           </p>
                         </span>
@@ -990,7 +990,7 @@ export default function App() {
 
                       <Button
                         text={"Explore Payment Collection"}
-                        className={"w-full mt-10 py-4"}
+                        className={"mt-10 w-full py-4"}
                         variant={"fill"}
                         icon={
                           <svg
@@ -1008,8 +1008,8 @@ export default function App() {
                         }
                       />
                     </div>
-                    <div className="bg-white p-10 rounded-lg border border-primary">
-                      <span className="w-[72px] h-[72px] rounded-lg border border-primary flex items-center justify-center shadow-4px p-4 bg-secondary">
+                    <div className="rounded-lg border border-primary bg-white p-10">
+                      <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={43}
                           height={43}
@@ -1047,18 +1047,18 @@ export default function App() {
                         </svg>
                       </span>
 
-                      <h2 className="font-medium tracking-[-0.04em] mt-10">
+                      <h2 className="mt-10 font-medium tracking-[-0.04em]">
                         Banking{" "}
                         <span className="text-[24px]">(Coming Soon)</span>
                       </h2>
 
-                      <h5 className="font-medium tracking-[-0.04em] mt-5">
+                      <h5 className="mt-5 font-medium tracking-[-0.04em]">
                         Integrated banking with zero friction. Create a
                         borderless account — save, spend and track easily, from
                         one place.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 gap-5 justify-items-start">
+                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -1081,7 +1081,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Available in 120 countries
                           </p>
                         </span>
@@ -1108,7 +1108,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Compliance-integrated
                           </p>
                         </span>
@@ -1135,7 +1135,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Virtual and physical cards
                           </p>
                         </span>
@@ -1162,7 +1162,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             No setup fee
                           </p>
                         </span>
@@ -1170,7 +1170,7 @@ export default function App() {
 
                       <Button
                         text={"Explore Banking"}
-                        className={"w-full mt-10 py-4"}
+                        className={"mt-10 w-full py-4"}
                         variant={"fill"}
                         icon={
                           <svg
@@ -1188,10 +1188,10 @@ export default function App() {
                         }
                       />
                     </div>
-                    <div className="bg-[url('./assets/images/tab1grid6.svg')] bg-cover bg-center bg-no-repeat rounded-lg p-8 border border-primary hidden md:block" />
-                    <div className="bg-[url('./assets/images/tab1grid7.svg')] bg-cover bg-center bg-no-repeat rounded-lg p-8 border border-primary hidden md:block" />
-                    <div className="bg-white p-10 rounded-lg border border-primary">
-                      <span className="w-[72px] h-[72px] rounded-lg border border-primary flex items-center justify-center shadow-4px p-4 bg-secondary">
+                    <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab1grid6.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
+                    <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab1grid7.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
+                    <div className="rounded-lg border border-primary bg-white p-10">
+                      <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={49}
                           height={49}
@@ -1254,17 +1254,17 @@ export default function App() {
                         </svg>
                       </span>
 
-                      <h2 className="font-medium tracking-[-0.04em] mt-10">
+                      <h2 className="mt-10 font-medium tracking-[-0.04em]">
                         Tax Assistance
                       </h2>
 
-                      <h5 className="font-medium tracking-[-0.04em] mt-5">
+                      <h5 className="mt-5 font-medium tracking-[-0.04em]">
                         Streamline your self-employed tax filing with
                         professional guidance, ensuring accuracy and optimizing
                         earnings.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 gap-5 justify-items-start">
+                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -1287,7 +1287,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Precise calculation & filing
                           </p>
                         </span>
@@ -1314,7 +1314,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             100% online process
                           </p>
                         </span>
@@ -1341,7 +1341,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Earning maximization
                           </p>
                         </span>
@@ -1368,7 +1368,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Personalized consultation
                           </p>
                         </span>
@@ -1376,7 +1376,7 @@ export default function App() {
 
                       <Button
                         text={"Explore Tax Assistance"}
-                        className={"w-full mt-10 py-4"}
+                        className={"mt-10 w-full py-4"}
                         variant={"fill"}
                         icon={
                           <svg
@@ -1397,9 +1397,9 @@ export default function App() {
                   </div>
                 </TabPanel>
                 <TabPanel index={2}>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div className="bg-white p-10 rounded-lg border border-primary">
-                      <span className="w-[72px] h-[72px] rounded-lg border border-primary flex items-center justify-center shadow-4px p-4 bg-secondary">
+                  <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+                    <div className="rounded-lg border border-primary bg-white p-10">
+                      <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={59}
                           height={59}
@@ -1498,17 +1498,17 @@ export default function App() {
                         </svg>
                       </span>
 
-                      <h2 className="font-medium tracking-[-0.04em] mt-10">
+                      <h2 className="mt-10 font-medium tracking-[-0.04em]">
                         Agency of Record
                       </h2>
 
-                      <h5 className="font-medium tracking-[-0.04em] mt-5">
+                      <h5 className="mt-5 font-medium tracking-[-0.04em]">
                         Work with off-payroll talents compliantly, regardless of
                         their location. Save resources by working in a B2B
                         arrangement.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 gap-5 justify-items-start">
+                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -1531,7 +1531,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             B2B invoicing
                           </p>
                         </span>
@@ -1558,7 +1558,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Simplified compliance
                           </p>
                         </span>
@@ -1585,7 +1585,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Cross-border standardization
                           </p>
                         </span>
@@ -1612,7 +1612,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Flexible & cost-efficient
                           </p>
                         </span>
@@ -1620,7 +1620,7 @@ export default function App() {
 
                       <Button
                         text={"Explore AOR"}
-                        className={"w-full mt-10 py-4"}
+                        className={"mt-10 w-full py-4"}
                         variant={"fill"}
                         icon={
                           <svg
@@ -1638,10 +1638,10 @@ export default function App() {
                         }
                       />
                     </div>
-                    <div className="bg-[url('./assets/images/tab2grid2.svg')] bg-cover bg-center bg-no-repeat rounded-lg p-8 border border-primary hidden md:block" />
-                    <div className="bg-[url('./assets/images/tab2grid3.svg')] bg-cover bg-center bg-no-repeat rounded-lg p-8 border border-primary hidden md:block" />
-                    <div className="bg-white p-10 rounded-lg border border-primary">
-                      <span className="w-[72px] h-[72px] rounded-lg border border-primary flex items-center justify-center shadow-4px p-4 bg-secondary">
+                    <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab2grid2.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
+                    <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab2grid3.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
+                    <div className="rounded-lg border border-primary bg-white p-10">
+                      <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={43}
                           height={43}
@@ -1679,16 +1679,16 @@ export default function App() {
                         </svg>
                       </span>
 
-                      <h2 className="font-medium tracking-[-0.04em] mt-10">
+                      <h2 className="mt-10 font-medium tracking-[-0.04em]">
                         Payments
                       </h2>
 
-                      <h5 className="font-medium tracking-[-0.04em] mt-5">
+                      <h5 className="mt-5 font-medium tracking-[-0.04em]">
                         Pay via credit card or bank transfer in any currency.
                         Manage payments to your talents on a single platform.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 gap-5 justify-items-start">
+                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -1711,7 +1711,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Mass pay-out
                           </p>
                         </span>
@@ -1738,7 +1738,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Compliant
                           </p>
                         </span>
@@ -1765,7 +1765,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             140+ currency options
                           </p>
                         </span>
@@ -1792,7 +1792,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Seamless & secure
                           </p>
                         </span>
@@ -1800,7 +1800,7 @@ export default function App() {
 
                       <Button
                         text={"Explore Payments"}
-                        className={"w-full mt-10 py-4"}
+                        className={"mt-10 w-full py-4"}
                         variant={"fill"}
                         icon={
                           <svg
@@ -1818,8 +1818,8 @@ export default function App() {
                         }
                       />
                     </div>
-                    <div className="bg-white p-10 rounded-lg border border-primary">
-                      <span className="w-[72px] h-[72px] rounded-lg border border-primary flex items-center justify-center shadow-4px p-4 bg-secondary">
+                    <div className="rounded-lg border border-primary bg-white p-10">
+                      <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={49}
                           height={49}
@@ -1882,17 +1882,17 @@ export default function App() {
                         </svg>
                       </span>
 
-                      <h2 className="font-medium tracking-[-0.04em] mt-10">
+                      <h2 className="mt-10 font-medium tracking-[-0.04em]">
                         Talent Management
                       </h2>
 
-                      <h5 className="font-medium tracking-[-0.04em] mt-5">
+                      <h5 className="mt-5 font-medium tracking-[-0.04em]">
                         Leverage Ruul's integrated solutions to manage
                         onboarding and payments of your global talents on a
                         single platform.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 gap-5 justify-items-start">
+                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -1915,7 +1915,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Fast onboarding
                           </p>
                         </span>
@@ -1942,7 +1942,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Background checks
                           </p>
                         </span>
@@ -1969,7 +1969,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Global payments
                           </p>
                         </span>
@@ -1996,7 +1996,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Regulatory compliance
                           </p>
                         </span>
@@ -2004,7 +2004,7 @@ export default function App() {
 
                       <Button
                         text={"Explore Talent Management"}
-                        className={"w-full mt-10 py-4"}
+                        className={"mt-10 w-full py-4"}
                         variant={"fill"}
                         icon={
                           <svg
@@ -2022,10 +2022,10 @@ export default function App() {
                         }
                       />
                     </div>
-                    <div className="bg-[url('./assets/images/tab2grid6.svg')] bg-cover bg-center bg-no-repeat rounded-lg p-8 border border-primary hidden md:block" />
-                    <div className="bg-[url('./assets/images/tab2grid7.svg')] bg-cover bg-center bg-no-repeat rounded-lg p-8 border border-primary hidden md:block" />
-                    <div className="bg-white p-10 rounded-lg border border-primary">
-                      <span className="w-[72px] h-[72px] rounded-lg border border-primary flex items-center justify-center shadow-4px p-4 bg-secondary">
+                    <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab2grid6.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
+                    <div className="hidden rounded-lg border border-primary bg-[url('./assets/images/tab2grid7.svg')] bg-cover bg-center bg-no-repeat p-8 md:block" />
+                    <div className="rounded-lg border border-primary bg-white p-10">
+                      <span className="shadow-4px flex h-[72px] w-[72px] items-center justify-center rounded-lg border border-primary bg-secondary p-4">
                         <svg
                           width={49}
                           height={49}
@@ -2088,16 +2088,16 @@ export default function App() {
                         </svg>
                       </span>
 
-                      <h2 className="font-medium tracking-[-0.04em] mt-10">
+                      <h2 className="mt-10 font-medium tracking-[-0.04em]">
                         Employer of Record
                       </h2>
 
-                      <h5 className="font-medium tracking-[-0.04em] mt-5">
+                      <h5 className="mt-5 font-medium tracking-[-0.04em]">
                         Hire remote employees globally without a local entity
                         and manage your workforce from a centralized platform.
                       </h5>
 
-                      <div className="mt-10 grid grid-cols-2 gap-5 justify-items-start">
+                      <div className="mt-10 grid grid-cols-2 justify-items-start gap-5">
                         <span className="flex items-center justify-center gap-x-2">
                           <svg
                             width={24}
@@ -2120,7 +2120,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Payroll processing
                           </p>
                         </span>
@@ -2147,7 +2147,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             HR management
                           </p>
                         </span>
@@ -2174,7 +2174,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             Multi-currency support
                           </p>
                         </span>
@@ -2201,7 +2201,7 @@ export default function App() {
                             />
                           </svg>
 
-                          <p className="tracking-[-0.01em] font-medium">
+                          <p className="font-medium tracking-[-0.01em]">
                             140 countries
                           </p>
                         </span>
@@ -2209,7 +2209,7 @@ export default function App() {
 
                       <Button
                         text={"Explore EOR"}
-                        className={"w-full mt-10 py-4"}
+                        className={"mt-10 w-full py-4"}
                         variant={"fill"}
                         icon={
                           <svg
@@ -2235,11 +2235,11 @@ export default function App() {
         </div>
       </section>
 
-      <section className="bg-white py-32 border-t border-primary">
+      <section className="border-t border-primary bg-white py-32">
         <div className="container grid grid-cols-1 md:grid-cols-5">
           <div className="col-span-1 md:col-span-2">
             <div className="max-w-full md:max-w-[85%]">
-              <h6 className="uppercase tracking-[1.12px] font-medium">
+              <h6 className="font-medium uppercase tracking-[1.12px]">
                 HERE TO HELP
               </h6>
 
@@ -2252,16 +2252,16 @@ export default function App() {
               </h4>
 
               <div className="mt-12">
-                <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
+                <div className="flex flex-col items-start justify-between md:flex-row md:items-center">
                   <div className="flex items-center gap-x-2">
-                    <span className="w-4 h-4 bg-primary text-secondary rounded-full flex items-center justify-center">
+                    <span className="flex h-4 w-4 items-center justify-center rounded-full bg-primary text-secondary">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 text-white"
+                        className="h-6 w-6 text-white"
                       >
                         <path
                           strokeLinecap="round"
@@ -2275,7 +2275,7 @@ export default function App() {
                   </div>
 
                   <Button
-                    className={"w-full md:w-auto mt-4 md:mt-0"}
+                    className={"mt-4 w-full md:mt-0 md:w-auto"}
                     text="Get Support"
                     variant="fill"
                   />
@@ -2283,7 +2283,7 @@ export default function App() {
               </div>
             </div>
           </div>
-          <div className="col-span-1 md:col-span-3 mt-6 md:mt-0">
+          <div className="col-span-1 mt-6 md:col-span-3 md:mt-0">
             <Accordion>
               <AccordionItem
                 title="What does Ruul do?"
@@ -2326,7 +2326,7 @@ export default function App() {
       <section className="bg-primary py-32">
         <div className="container">
           <CustomSlider subTitle={"USER STORIES"} title={"Why they love Ruul"}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[48px] content-stretch">
+            <div className="grid grid-cols-1 content-stretch gap-[48px] md:grid-cols-2">
               <div className="user-stories-card">
                 <h5 className="tracking-[0.01em]">
                   Invoicing and payments are the most challenging parts of
@@ -2358,7 +2358,7 @@ export default function App() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[48px] content-stretch">
+            <div className="grid grid-cols-1 content-stretch gap-[48px] md:grid-cols-2">
               <div className="user-stories-card">
                 <h5 className="tracking-[0.01em]">
                   This is a very convenient way of paying freelancers, it was
@@ -2395,8 +2395,8 @@ export default function App() {
 
       <section className="bg-secondary py-32">
         <div className="container">
-          <div className="w-full max-w-[650px] mx-auto text-center">
-            <h6 className="uppercase tracking-[1.12px] font-medium">
+          <div className="mx-auto w-full max-w-[650px] text-center">
+            <h6 className="font-medium uppercase tracking-[1.12px]">
               GET STARTED NOW
             </h6>
 
@@ -2452,9 +2452,9 @@ export default function App() {
             </div>
           </div>
 
-          <div className="mt-[65px] rounded-lg border border-primary overflow-hidden">
+          <div className="mt-[65px] overflow-hidden rounded-lg border border-primary">
             <img
-              className="object-cover w-full h-full"
+              className="h-full w-full object-cover"
               src={growAndThriveSectionSvg}
               alt="section-img"
             />
@@ -2462,9 +2462,9 @@ export default function App() {
         </div>
       </section>
 
-      <section className="bg-white py-24 border-t border-primary">
+      <section className="border-t border-primary bg-white py-24">
         <div className="container">
-          <div className="grid grid-cols-2 gap-[64px] items-center justify-items-stretch">
+          <div className="grid grid-cols-2 items-center justify-items-stretch gap-[64px]">
             <div>
               <h1 className="font-medium tracking-[-0.04em]">
                 Explore and spread: Ruul Blog
@@ -2477,13 +2477,13 @@ export default function App() {
               </h4>
             </div>
             <div>
-              <div className="w-full max-w-[420px] ml-auto">
-                <form className="p-1 rounded-lg border border-primary flex items-center gap-x-3">
+              <div className="ml-auto w-full max-w-[420px]">
+                <form className="flex items-center gap-x-3 rounded-lg border border-primary p-1">
                   <input
                     type="email"
                     required={true}
                     placeholder="Enter your email"
-                    className="py-3 px-4 bg-transparent min-h-[48px] flex-1 outline-none placeholder:text-primary"
+                    className="min-h-[48px] flex-1 bg-transparent px-4 py-3 outline-none placeholder:text-primary"
                   />
                   <Button text={"Subscribe"} variant="fill" />
                 </form>
@@ -2496,17 +2496,17 @@ export default function App() {
             </div>
           </div>
 
-          <div className="mt-[60px] border border-primary rounded-lg bg-[url('./assets/images/blog-section-bg.jpg')] bg-cover bg-center p-8 flex items-end justify-between">
-            <div className="bg-white border border-primary rounded-lg max-w-[420px] p-8">
-              <h3 className="tracking-[-0.03em] font-medium leading-[1.4]">
+          <div className="mt-[60px] flex items-end justify-between rounded-lg border border-primary bg-[url('./assets/images/blog-section-bg.jpg')] bg-cover bg-center p-8">
+            <div className="max-w-[420px] rounded-lg border border-primary bg-white p-8">
+              <h3 className="font-medium leading-[1.4] tracking-[-0.03em]">
                 Talent Talks #4: Meet photographer & cinematographer Vasilis
                 Barahanos
               </h3>
 
               <div className="mt-16 flex items-center gap-x-2">
-                <span className="w-12 h-12 rounded-full overflow-hidden border border-primary block bg-secondary">
+                <span className="block h-12 w-12 overflow-hidden rounded-full border border-primary bg-secondary">
                   <img
-                    className="object-cover w-full h-full"
+                    className="h-full w-full object-cover"
                     src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairDreads02&accessoriesType=Round&hairColor=Platinum&facialHairType=Blank&clotheType=ShirtScoopNeck&clotheColor=Gray01&eyeType=Default&eyebrowType=Angry&mouthType=Eating&skinColor=Black"
                     alt=""
                   />
@@ -2526,5 +2526,5 @@ export default function App() {
         </div>
       </section>
     </Layout>
-  )
+  );
 }
