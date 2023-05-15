@@ -2,7 +2,6 @@ import { Logo } from "../Logo"
 import styles from "./Footer.module.scss"
 
 export default function Footer() {
-  // flex flex-wrap md:flex-nowrap justify-start md:justify-between
   return (
     <footer className={styles.Footer}>
       <div className="container">
