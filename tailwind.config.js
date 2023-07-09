@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      container: {
+        padding: "0rem",
+        center: true
+      },
       fontFamily: {
         sans: ["Satoshi", "sans-serif"]
       },

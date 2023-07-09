@@ -60,10 +60,6 @@ p {
   line-height: 26px;
 }
 
-.container {
-  @apply px-[5%] mx-auto;
-}
-
 .protocol-icons {
   @apply mt-1 flex h-12 w-12 flex-none items-center justify-center rounded-full border border-primary;
   box-shadow: 3px 3px #013e39;

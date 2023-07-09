@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="container relative grid grid-cols-1 gap-x-8 md:grid-cols-12">
         <div className="col-span-1 text-primary md:col-span-7">
           <h6 className="font-medium uppercase tracking-[1.12px]">worktech</h6>
-          <h1 className="mt-3 max-w-full md:max-w-[90%] font-medium tracking-[-0.04em]">
+          <h1 className="mt-3 font-medium tracking-[-0.04em]">
             The infrastructure of modern work
           </h1>
 
@@ -68,7 +68,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="container mt-6 grid translate-y-0 grid-cols-2 gap-10 md:mt-14 md:translate-y-14 md:grid-cols-4">
+      <div className="container mt-6 grid translate-y-0 grid-cols-2 gap-10 md:mt-4 md:translate-y-14 md:grid-cols-4">
         <PartnerCard>
           <img src={klarna} alt="klarna-img" />
         </PartnerCard>
